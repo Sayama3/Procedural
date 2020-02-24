@@ -11302,6 +11302,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491b3f935bafca84e958baa01b2a3722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  categoryHeaders: []
+  categorySize: 
+  seedText: {fileID: 0}
 --- !u!1 &667030907862063121
 GameObject:
   m_ObjectHideFlags: 0
@@ -13953,6 +13956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168833}
   - component: {fileID: 667030907865241789}
+  - component: {fileID: 3528709061573723728}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_07
   m_TagString: Untagged
@@ -14028,6 +14032,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 26.651688, z: -6.858095}
     m_Extent: {x: 14.989075, y: 10.9418335, z: 13.0489025}
   m_DirtyAABB: 0
+--- !u!114 &3528709061573723728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063395
 GameObject:
   m_ObjectHideFlags: 0
@@ -14038,6 +14060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168835}
   - component: {fileID: 667030907865241791}
+  - component: {fileID: 4342184702778931827}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_08
   m_TagString: Untagged
@@ -14114,6 +14137,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0000038146973, y: 19.400223, z: 5.6942015}
     m_Extent: {x: 13.966351, y: 8.175964, z: 11.483178}
   m_DirtyAABB: 0
+--- !u!114 &4342184702778931827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063397
 GameObject:
   m_ObjectHideFlags: 0
@@ -14124,6 +14165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168837}
   - component: {fileID: 667030907865241761}
+  - component: {fileID: 5025765841472109254}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_09
   m_TagString: Untagged
@@ -14200,6 +14242,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 25.73793, z: 12.5502205}
     m_Extent: {x: 6.396686, y: 11.903442, z: 6.0423813}
   m_DirtyAABB: 0
+--- !u!114 &5025765841472109254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063399
 GameObject:
   m_ObjectHideFlags: 0
@@ -14210,6 +14270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168839}
   - component: {fileID: 667030907865241763}
+  - component: {fileID: 1232281279778920313}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_10
   m_TagString: Untagged
@@ -14288,6 +14349,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -48.567287, y: 34.82096, z: 2.1798515}
     m_Extent: {x: 22.694378, y: 33.37873, z: 13.0133095}
   m_DirtyAABB: 0
+--- !u!114 &1232281279778920313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063401
 GameObject:
   m_ObjectHideFlags: 0
@@ -14298,6 +14377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168841}
   - component: {fileID: 667030907865241765}
+  - component: {fileID: 3877389478225590234}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_11
   m_TagString: Untagged
@@ -14374,6 +14454,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 22.96199, z: 12.118147}
     m_Extent: {x: 8.336197, y: 11.981995, z: 6.922331}
   m_DirtyAABB: 0
+--- !u!114 &3877389478225590234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063403
 GameObject:
   m_ObjectHideFlags: 0
@@ -14384,6 +14482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168843}
   - component: {fileID: 667030907865241767}
+  - component: {fileID: 4013850861274002503}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_12
   m_TagString: Untagged
@@ -14463,6 +14562,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -47.699123, y: 22.410141, z: 15.8957815}
     m_Extent: {x: 21.010632, y: 30.19638, z: 8.843263}
   m_DirtyAABB: 0
+--- !u!114 &4013850861274002503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063405
 GameObject:
   m_ObjectHideFlags: 0
@@ -14473,6 +14590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168845}
   - component: {fileID: 667030907865241769}
+  - component: {fileID: 4659003112102507149}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_13
   m_TagString: Untagged
@@ -14551,6 +14669,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -47.736534, y: 23.654676, z: -15.913388}
     m_Extent: {x: 21.23614, y: 31.440912, z: 9.784823}
   m_DirtyAABB: 0
+--- !u!114 &4659003112102507149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063407
 GameObject:
   m_ObjectHideFlags: 0
@@ -14761,6 +14897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168853}
   - component: {fileID: 667030907865241777}
+  - component: {fileID: 3474939768102415475}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_01
   m_TagString: Untagged
@@ -14842,6 +14979,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -37.206707, y: 24.568352, z: 0.72242355}
     m_Extent: {x: 20.877388, y: 23.960777, z: 8.353977}
   m_DirtyAABB: 0
+--- !u!114 &3474939768102415475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063415
 GameObject:
   m_ObjectHideFlags: 0
@@ -14852,6 +15007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168855}
   - component: {fileID: 667030907865241779}
+  - component: {fileID: 5573474985087433680}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_02
   m_TagString: Untagged
@@ -14932,6 +15088,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -36.18497, y: 26.390509, z: 0.44766998}
     m_Extent: {x: 21.386124, y: 24.697882, z: 6.1223297}
   m_DirtyAABB: 0
+--- !u!114 &5573474985087433680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063417
 GameObject:
   m_ObjectHideFlags: 0
@@ -14942,6 +15116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168857}
   - component: {fileID: 667030907865241781}
+  - component: {fileID: 5859740346271660129}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_03
   m_TagString: Untagged
@@ -15022,6 +15197,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 18.293472, z: -1.3294048}
     m_Extent: {x: 16.9001, y: 16.709839, z: 10.081596}
   m_DirtyAABB: 0
+--- !u!114 &5859740346271660129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063419
 GameObject:
   m_ObjectHideFlags: 0
@@ -15032,6 +15225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168859}
   - component: {fileID: 667030907865241783}
+  - component: {fileID: 9040470876505552856}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_04
   m_TagString: Untagged
@@ -15109,6 +15303,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 1.4432068, y: 24.523636, z: -1.6226449}
     m_Extent: {x: 29.913025, y: 16.875793, z: 6.486872}
   m_DirtyAABB: 0
+--- !u!114 &9040470876505552856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063421
 GameObject:
   m_ObjectHideFlags: 0
@@ -15119,6 +15331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168861}
   - component: {fileID: 667030907865241785}
+  - component: {fileID: 4772031110162483668}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_05
   m_TagString: Untagged
@@ -15199,6 +15412,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -42.973892, y: 35.112953, z: -1.6547394}
     m_Extent: {x: 22.03009, y: 34.037224, z: 26.328217}
   m_DirtyAABB: 0
+--- !u!114 &4772031110162483668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063423
 GameObject:
   m_ObjectHideFlags: 0
@@ -15209,6 +15440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168863}
   - component: {fileID: 667030907865241787}
+  - component: {fileID: 2756515363167842681}
   m_Layer: 0
   m_Name: Chr_HelmetAttachment_06
   m_TagString: Untagged
@@ -15285,6 +15517,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 22.926788, z: -1.6204777}
     m_Extent: {x: 3.2557373, y: 15.630997, z: 19.170963}
   m_DirtyAABB: 0
+--- !u!114 &2756515363167842681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063425
 GameObject:
   m_ObjectHideFlags: 0
@@ -17880,6 +18130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168929}
   - component: {fileID: 667030907865242535}
+  - component: {fileID: 3798549048605263073}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_03
   m_TagString: Untagged
@@ -17953,6 +18204,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.9979439, y: -0.3360138, z: 0.5542965}
     m_Extent: {x: 10.972257, y: 10.145754, z: 16.470093}
   m_DirtyAABB: 0
+--- !u!114 &3798549048605263073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063491
 GameObject:
   m_ObjectHideFlags: 0
@@ -17963,6 +18232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168931}
   - component: {fileID: 667030907865242537}
+  - component: {fileID: 4891225664829026985}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_04
   m_TagString: Untagged
@@ -18036,6 +18306,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 8.554054, y: 0.24107409, z: -0.4461298}
     m_Extent: {x: 10.720886, y: 6.383363, z: 11.198334}
   m_DirtyAABB: 0
+--- !u!114 &4891225664829026985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063493
 GameObject:
   m_ObjectHideFlags: 0
@@ -18046,6 +18334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168933}
   - component: {fileID: 667030907865242539}
+  - component: {fileID: 4725241308100795888}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_05
   m_TagString: Untagged
@@ -18119,6 +18408,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.42508793, y: 0.33842468, z: 0.83490276}
     m_Extent: {x: 11.2139, y: 9.510499, z: 14.199795}
   m_DirtyAABB: 0
+--- !u!114 &4725241308100795888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063495
 GameObject:
   m_ObjectHideFlags: 0
@@ -18129,6 +18436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168935}
   - component: {fileID: 667030907865242541}
+  - component: {fileID: 7209418921743469405}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_06
   m_TagString: Untagged
@@ -18202,6 +18510,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 2.0774498, y: 1.0623016, z: -0.14519787}
     m_Extent: {x: 16.119854, y: 9.2786875, z: 14.656646}
   m_DirtyAABB: 0
+--- !u!114 &7209418921743469405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063497
 GameObject:
   m_ObjectHideFlags: 0
@@ -18212,6 +18538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168937}
   - component: {fileID: 667030907865242543}
+  - component: {fileID: 3591972307415630366}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_07
   m_TagString: Untagged
@@ -18285,6 +18612,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.23633957, y: 4.533798, z: 2.3783932}
     m_Extent: {x: 18.640371, y: 16.799746, z: 21.284609}
   m_DirtyAABB: 0
+--- !u!114 &3591972307415630366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063499
 GameObject:
   m_ObjectHideFlags: 0
@@ -18295,6 +18640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168939}
   - component: {fileID: 667030907865242577}
+  - component: {fileID: 6813945653366878935}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_08
   m_TagString: Untagged
@@ -18368,6 +18714,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 6.6352615, y: 1.769455, z: -1.2995481}
     m_Extent: {x: 16.22763, y: 13.181764, z: 14.750007}
   m_DirtyAABB: 0
+--- !u!114 &6813945653366878935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063501
 GameObject:
   m_ObjectHideFlags: 0
@@ -18378,13 +18742,14 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168941}
   - component: {fileID: 667030907865242579}
+  - component: {fileID: 3738167009985841927}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &667030907862168941
 Transform:
   m_ObjectHideFlags: 0
@@ -18451,6 +18816,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 7.2763896, y: 2.7952127, z: -0.80679226}
     m_Extent: {x: 14.750412, y: 11.840455, z: 13.42129}
   m_DirtyAABB: 0
+--- !u!114 &3738167009985841927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862063503
 GameObject:
   m_ObjectHideFlags: 0
@@ -18461,6 +18844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168943}
   - component: {fileID: 667030907865242581}
+  - component: {fileID: 2602800112795281399}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_10
   m_TagString: Untagged
@@ -18534,6 +18918,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 10.131966, y: 1.9022069, z: 0.34908867}
     m_Extent: {x: 12.94046, y: 14.144594, z: 16.350594}
   m_DirtyAABB: 0
+--- !u!114 &2602800112795281399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063505
 GameObject:
   m_ObjectHideFlags: 0
@@ -19042,6 +19444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168957}
   - component: {fileID: 667030907865242531}
+  - component: {fileID: 2584605084145039942}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_01
   m_TagString: Untagged
@@ -19115,6 +19518,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 3.502102, y: -0.94844055, z: -0.2583561}
     m_Extent: {x: 11.518598, y: 8.783083, z: 16.955963}
   m_DirtyAABB: 0
+--- !u!114 &2584605084145039942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063519
 GameObject:
   m_ObjectHideFlags: 0
@@ -19125,6 +19546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168959}
   - component: {fileID: 667030907865242533}
+  - component: {fileID: 1618099200704990053}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_02
   m_TagString: Untagged
@@ -19198,6 +19620,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 2.7277374, y: -1.3175201, z: -0.6790714}
     m_Extent: {x: 12.292962, y: 8.899111, z: 16.687866}
   m_DirtyAABB: 0
+--- !u!114 &1618099200704990053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063521
 GameObject:
   m_ObjectHideFlags: 0
@@ -19208,6 +19648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168961}
   - component: {fileID: 667030907865242567}
+  - component: {fileID: 9041362894885788671}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_19
   m_TagString: Untagged
@@ -19281,6 +19722,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 7.8945765, y: 2.9751434, z: 1.7942715}
     m_Extent: {x: 14.77697, y: 13.347536, z: 17.707092}
   m_DirtyAABB: 0
+--- !u!114 &9041362894885788671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063523
 GameObject:
   m_ObjectHideFlags: 0
@@ -19291,6 +19750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168963}
   - component: {fileID: 667030907865242569}
+  - component: {fileID: 3458278671412084679}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_20
   m_TagString: Untagged
@@ -19364,6 +19824,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 7.282296, y: 5.875839, z: 0.6373482}
     m_Extent: {x: 13.861482, y: 12.787905, z: 20.697954}
   m_DirtyAABB: 0
+--- !u!114 &3458278671412084679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063525
 GameObject:
   m_ObjectHideFlags: 0
@@ -19374,6 +19852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168965}
   - component: {fileID: 667030907865242571}
+  - component: {fileID: 5215251880367160932}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_21
   m_TagString: Untagged
@@ -19447,6 +19926,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 5.4647827, y: -0.58332825, z: 0.6373501}
     m_Extent: {x: 10.356912, y: 10.963381, z: 18.979692}
   m_DirtyAABB: 0
+--- !u!114 &5215251880367160932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063527
 GameObject:
   m_ObjectHideFlags: 0
@@ -19701,6 +20198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168977}
   - component: {fileID: 667030907865242583}
+  - component: {fileID: 2759746611776709462}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_11
   m_TagString: Untagged
@@ -19774,6 +20272,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 10.131966, y: 1.9022069, z: 1.3696384}
     m_Extent: {x: 12.94046, y: 14.144594, z: 17.371143}
   m_DirtyAABB: 0
+--- !u!114 &2759746611776709462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063539
 GameObject:
   m_ObjectHideFlags: 0
@@ -19784,6 +20300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168979}
   - component: {fileID: 667030907865242585}
+  - component: {fileID: 3300485239502260807}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_12
   m_TagString: Untagged
@@ -19857,6 +20374,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 3.9880142, y: 2.0469208, z: -0.65824795}
     m_Extent: {x: 10.123811, y: 13.080689, z: 14.54301}
   m_DirtyAABB: 0
+--- !u!114 &3300485239502260807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063541
 GameObject:
   m_ObjectHideFlags: 0
@@ -19867,6 +20402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168981}
   - component: {fileID: 667030907865242587}
+  - component: {fileID: 7839336198096529184}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_13
   m_TagString: Untagged
@@ -19940,6 +20476,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 10.216316, y: 2.8818827, z: -2.2001877}
     m_Extent: {x: 14.6683655, y: 9.658814, z: 12.47014}
   m_DirtyAABB: 0
+--- !u!114 &7839336198096529184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063543
 GameObject:
   m_ObjectHideFlags: 0
@@ -19950,6 +20504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168983}
   - component: {fileID: 667030907865242589}
+  - component: {fileID: 1334195408122233410}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_14
   m_TagString: Untagged
@@ -20023,6 +20578,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 5.7889285, y: 1.0014498, z: 0.38017464}
     m_Extent: {x: 12.95171, y: 8.761903, z: 13.803798}
   m_DirtyAABB: 0
+--- !u!114 &1334195408122233410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063545
 GameObject:
   m_ObjectHideFlags: 0
@@ -20033,6 +20606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168985}
   - component: {fileID: 667030907865242591}
+  - component: {fileID: 1851476110257170695}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_15
   m_TagString: Untagged
@@ -20106,6 +20680,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 4.413078, y: -1.4396515, z: -0.29597378}
     m_Extent: {x: 13.7191925, y: 9.054811, z: 13.999537}
   m_DirtyAABB: 0
+--- !u!114 &1851476110257170695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063547
 GameObject:
   m_ObjectHideFlags: 0
@@ -20116,6 +20708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168987}
   - component: {fileID: 667030907865242561}
+  - component: {fileID: 4912166447891138766}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_16
   m_TagString: Untagged
@@ -20189,6 +20782,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 3.6140006, y: -0.5868683, z: 0.2704029}
     m_Extent: {x: 9.046925, y: 6.173463, z: 11.873056}
   m_DirtyAABB: 0
+--- !u!114 &4912166447891138766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063549
 GameObject:
   m_ObjectHideFlags: 0
@@ -20199,6 +20810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168989}
   - component: {fileID: 667030907865242563}
+  - component: {fileID: 6602011588987735274}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_17
   m_TagString: Untagged
@@ -20272,6 +20884,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 7.1416397, y: 1.2723241, z: -0.9832144}
     m_Extent: {x: 12.0772705, y: 5.789247, z: 10.280343}
   m_DirtyAABB: 0
+--- !u!114 &6602011588987735274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063551
 GameObject:
   m_ObjectHideFlags: 0
@@ -20282,6 +20912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862168991}
   - component: {fileID: 667030907865242565}
+  - component: {fileID: 3763044980335171977}
   m_Layer: 0
   m_Name: Chr_ShoulderAttachRight_18
   m_TagString: Untagged
@@ -20355,6 +20986,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 4.9556627, y: 6.580307, z: 0.7453065}
     m_Extent: {x: 13.772222, y: 15.231386, z: 16.13417}
   m_DirtyAABB: 0
+--- !u!114 &3763044980335171977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862063551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 0
+  rogue: 0
+  mage: 0
+  priest: 0
+  berserk: 0
+  classes: 
 --- !u!1 &667030907862063553
 GameObject:
   m_ObjectHideFlags: 0
@@ -59360,6 +60009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157921}
   - component: {fileID: 667030907865241915}
+  - component: {fileID: 7735876473690205483}
   m_Layer: 0
   m_Name: Chr_BackAttachment_09
   m_TagString: Untagged
@@ -59437,6 +60087,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0061302185, y: -43.58906, z: -4.574766}
     m_Extent: {x: 27.346333, y: 48.053043, z: 11.733606}
   m_DirtyAABB: 0
+--- !u!114 &7735876473690205483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064771
 GameObject:
   m_ObjectHideFlags: 0
@@ -59447,6 +60115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157923}
   - component: {fileID: 667030907865241917}
+  - component: {fileID: 8793014735375420432}
   m_Layer: 0
   m_Name: Chr_BackAttachment_10
   m_TagString: Untagged
@@ -59524,6 +60193,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.39322662, y: -59.217793, z: -7.718536}
     m_Extent: {x: 33.038452, y: 63.681774, z: 14.877377}
   m_DirtyAABB: 0
+--- !u!114 &8793014735375420432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064773
 GameObject:
   m_ObjectHideFlags: 0
@@ -59534,6 +60221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157925}
   - component: {fileID: 667030907865241919}
+  - component: {fileID: 5759056546480773577}
   m_Layer: 0
   m_Name: Chr_BackAttachment_11
   m_TagString: Untagged
@@ -59611,6 +60299,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.3931961, y: -59.217793, z: -7.7185364}
     m_Extent: {x: 33.038452, y: 63.681774, z: 14.877377}
   m_DirtyAABB: 0
+--- !u!114 &5759056546480773577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064775
 GameObject:
   m_ObjectHideFlags: 0
@@ -59621,13 +60327,14 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157927}
   - component: {fileID: 667030907865241889}
+  - component: {fileID: 5483376374507580189}
   m_Layer: 0
   m_Name: Chr_BackAttachment_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &667030907862157927
 Transform:
   m_ObjectHideFlags: 0
@@ -59697,6 +60404,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.3932457, y: -33.095463, z: -3.8757288}
     m_Extent: {x: 31.015087, y: 37.559444, z: 11.03457}
   m_DirtyAABB: 0
+--- !u!114 &5483376374507580189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064777
 GameObject:
   m_ObjectHideFlags: 0
@@ -59707,6 +60432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157929}
   - component: {fileID: 667030907865241891}
+  - component: {fileID: 86130146487107223}
   m_Layer: 0
   m_Name: Chr_BackAttachment_13
   m_TagString: Untagged
@@ -59784,6 +60510,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000076293945, y: -64.05455, z: -7.7185373}
     m_Extent: {x: 36.620193, y: 68.518524, z: 14.8773775}
   m_DirtyAABB: 0
+--- !u!114 &86130146487107223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064779
 GameObject:
   m_ObjectHideFlags: 0
@@ -59794,6 +60538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157931}
   - component: {fileID: 667030907865241893}
+  - component: {fileID: 8911721659544241161}
   m_Layer: 0
   m_Name: Chr_BackAttachment_14
   m_TagString: Untagged
@@ -59871,6 +60616,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000076293945, y: -55.93314, z: -5.1678305}
     m_Extent: {x: 35.217514, y: 60.39712, z: 12.326671}
   m_DirtyAABB: 0
+--- !u!114 &8911721659544241161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064781
 GameObject:
   m_ObjectHideFlags: 0
@@ -59881,6 +60644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157933}
   - component: {fileID: 667030907865241895}
+  - component: {fileID: 692277707016014}
   m_Layer: 0
   m_Name: Chr_BackAttachment_15
   m_TagString: Untagged
@@ -59958,6 +60722,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000076293945, y: -64.05455, z: -7.7185373}
     m_Extent: {x: 36.620193, y: 68.518524, z: 14.8773775}
   m_DirtyAABB: 0
+--- !u!114 &692277707016014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064783
 GameObject:
   m_ObjectHideFlags: 0
@@ -60051,6 +60833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157937}
   - component: {fileID: 667030907865241867}
+  - component: {fileID: 5079737744139522391}
   m_Layer: 0
   m_Name: Chr_BackAttachment_01
   m_TagString: Untagged
@@ -60141,6 +60924,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -42.848125, y: -15.991713, z: 0}
     m_Extent: {x: 28.317715, y: 15.771227, z: 21.517368}
   m_DirtyAABB: 0
+--- !u!114 &5079737744139522391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064787
 GameObject:
   m_ObjectHideFlags: 0
@@ -60151,6 +60952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157939}
   - component: {fileID: 667030907865241869}
+  - component: {fileID: 345631023131991451}
   m_Layer: 0
   m_Name: Chr_BackAttachment_02
   m_TagString: Untagged
@@ -60232,6 +61034,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 4.8893776, y: 16.956863, z: -0.00004673004}
     m_Extent: {x: 14.99333, y: 7.5250454, z: 14.744809}
   m_DirtyAABB: 0
+--- !u!114 &345631023131991451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064789
 GameObject:
   m_ObjectHideFlags: 0
@@ -60242,6 +61062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157941}
   - component: {fileID: 667030907865241871}
+  - component: {fileID: 2682456481043631148}
   m_Layer: 0
   m_Name: Chr_BackAttachment_03
   m_TagString: Untagged
@@ -60319,6 +61140,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000076293945, y: -59.577244, z: -7.08979}
     m_Extent: {x: 27.258345, y: 64.04122, z: 14.248615}
   m_DirtyAABB: 0
+--- !u!114 &2682456481043631148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064791
 GameObject:
   m_ObjectHideFlags: 0
@@ -60329,6 +61168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157943}
   - component: {fileID: 667030907865241905}
+  - component: {fileID: 6156472631134666701}
   m_Layer: 0
   m_Name: Chr_BackAttachment_04
   m_TagString: Untagged
@@ -60406,6 +61246,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0053167343, y: -48.454052, z: -3.9861965}
     m_Extent: {x: 25.30249, y: 52.918034, z: 11.145038}
   m_DirtyAABB: 0
+--- !u!114 &6156472631134666701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064793
 GameObject:
   m_ObjectHideFlags: 0
@@ -60416,6 +61274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157945}
   - component: {fileID: 667030907865241907}
+  - component: {fileID: 3611505825247097514}
   m_Layer: 0
   m_Name: Chr_BackAttachment_05
   m_TagString: Untagged
@@ -60493,6 +61352,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000076293945, y: -66.75127, z: -7.7185364}
     m_Extent: {x: 39.169846, y: 71.21524, z: 14.877378}
   m_DirtyAABB: 0
+--- !u!114 &3611505825247097514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064795
 GameObject:
   m_ObjectHideFlags: 0
@@ -60503,6 +61380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157947}
   - component: {fileID: 667030907865241909}
+  - component: {fileID: 1028693266142539073}
   m_Layer: 0
   m_Name: Chr_BackAttachment_06
   m_TagString: Untagged
@@ -60580,6 +61458,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000076293945, y: -64.81419, z: -7.790299}
     m_Extent: {x: 36.620193, y: 69.27817, z: 14.949141}
   m_DirtyAABB: 0
+--- !u!114 &1028693266142539073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064797
 GameObject:
   m_ObjectHideFlags: 0
@@ -60590,6 +61486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157949}
   - component: {fileID: 667030907865241911}
+  - component: {fileID: 14070643603427747}
   m_Layer: 0
   m_Name: Chr_BackAttachment_07
   m_TagString: Untagged
@@ -60667,6 +61564,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000019073486, y: -64.05455, z: -7.7185354}
     m_Extent: {x: 21.718073, y: 68.518524, z: 14.877376}
   m_DirtyAABB: 0
+--- !u!114 &14070643603427747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064799
 GameObject:
   m_ObjectHideFlags: 0
@@ -60677,6 +61592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667030907862157951}
   - component: {fileID: 667030907865241913}
+  - component: {fileID: 4213980262621252499}
   m_Layer: 0
   m_Name: Chr_BackAttachment_08
   m_TagString: Untagged
@@ -60754,6 +61670,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000019073486, y: -63.247944, z: -7.7185364}
     m_Extent: {x: 21.718073, y: 67.71192, z: 14.877377}
   m_DirtyAABB: 0
+--- !u!114 &4213980262621252499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667030907862064799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7020630ef49b44498150c8dcf32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warrior: 1
+  rogue: 1
+  mage: 1
+  priest: 1
+  berserk: 1
+  classes: 
 --- !u!1 &667030907862064801
 GameObject:
   m_ObjectHideFlags: 0
