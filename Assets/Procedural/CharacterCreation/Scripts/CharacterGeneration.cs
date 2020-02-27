@@ -78,5 +78,6 @@ public class CharacterGeneration : MonoBehaviour
     }
     public void GenerateAvatarFromSeed(int _seed)
     {
+
     }
 }
