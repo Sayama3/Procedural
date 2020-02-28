@@ -29,6 +29,8 @@ namespace Procedural03
         private void Start()
         {
             generator = GetComponent<CharacterGenerator>();
+
+            GenerateRandom();
         }
 
         private void Update()

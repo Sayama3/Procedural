@@ -30,6 +30,14 @@ namespace Procedural03
 
     public class CharacterGenerator : MonoBehaviour
     {
+        [Header("Liste Arme Main Gauche")]
+        public Transform rootWeaponsLeftHand;
+        [Header("Liste Arme Main Droite")]
+        public Transform rootWeaponsRightHand;
+        [Header("Liste Bouclier")]
+        public Transform rootShields;
+
+
         SeedGenerator seedGenerator;
 
         CharacterObjectGroups male = new CharacterObjectGroups();
@@ -40,42 +48,42 @@ namespace Procedural03
         int seedEnhancer;
 
         //Declaring variable for the player
-        [Header("Material")]
-        public Material mat;
+        //[Header("Material")]
+        private Material mat;
 
-        [Header("Gear Colors")]
-        public Color[] primary = { new Color(0.2862745f, 0.4f, 0.4941177f), new Color(0.4392157f, 0.1960784f, 0.172549f), new Color(0.3529412f, 0.3803922f, 0.2705882f), new Color(0.682353f, 0.4392157f, 0.2196079f), new Color(0.4313726f, 0.2313726f, 0.2705882f), new Color(0.5921569f, 0.4941177f, 0.2588235f), new Color(0.482353f, 0.4156863f, 0.3529412f), new Color(0.2352941f, 0.2352941f, 0.2352941f), new Color(0.2313726f, 0.4313726f, 0.4156863f) };
-        public Color[] secondary = { new Color(0.7019608f, 0.6235294f, 0.4666667f), new Color(0.7372549f, 0.7372549f, 0.7372549f), new Color(0.1647059f, 0.1647059f, 0.1647059f), new Color(0.2392157f, 0.2509804f, 0.1882353f) };
+        //[Header("Gear Colors")]
+        private Color[] primary = { new Color(0.2862745f, 0.4f, 0.4941177f), new Color(0.4392157f, 0.1960784f, 0.172549f), new Color(0.3529412f, 0.3803922f, 0.2705882f), new Color(0.682353f, 0.4392157f, 0.2196079f), new Color(0.4313726f, 0.2313726f, 0.2705882f), new Color(0.5921569f, 0.4941177f, 0.2588235f), new Color(0.482353f, 0.4156863f, 0.3529412f), new Color(0.2352941f, 0.2352941f, 0.2352941f), new Color(0.2313726f, 0.4313726f, 0.4156863f) };
+        private Color[] secondary = { new Color(0.7019608f, 0.6235294f, 0.4666667f), new Color(0.7372549f, 0.7372549f, 0.7372549f), new Color(0.1647059f, 0.1647059f, 0.1647059f), new Color(0.2392157f, 0.2509804f, 0.1882353f) };
 
-        [Header("Metal Colors")]
-        public Color[] metalPrimary = { new Color(0.6705883f, 0.6705883f, 0.6705883f), new Color(0.5568628f, 0.5960785f, 0.6392157f), new Color(0.5568628f, 0.6235294f, 0.6f), new Color(0.6313726f, 0.6196079f, 0.5568628f), new Color(0.6980392f, 0.6509804f, 0.6196079f) };
-        public Color[] metalSecondary = { new Color(0.3921569f, 0.4039216f, 0.4117647f), new Color(0.4784314f, 0.5176471f, 0.5450981f), new Color(0.3764706f, 0.3607843f, 0.3372549f), new Color(0.3254902f, 0.3764706f, 0.3372549f), new Color(0.4f, 0.4039216f, 0.3568628f) };
+        //[Header("Metal Colors")]
+        private Color[] metalPrimary = { new Color(0.6705883f, 0.6705883f, 0.6705883f), new Color(0.5568628f, 0.5960785f, 0.6392157f), new Color(0.5568628f, 0.6235294f, 0.6f), new Color(0.6313726f, 0.6196079f, 0.5568628f), new Color(0.6980392f, 0.6509804f, 0.6196079f) };
+        private Color[] metalSecondary = { new Color(0.3921569f, 0.4039216f, 0.4117647f), new Color(0.4784314f, 0.5176471f, 0.5450981f), new Color(0.3764706f, 0.3607843f, 0.3372549f), new Color(0.3254902f, 0.3764706f, 0.3372549f), new Color(0.4f, 0.4039216f, 0.3568628f) };
 
-        [Header("Leather Colors")]
-        public Color[] leatherPrimary;
-        public Color[] leatherSecondary;
+        //[Header("Leather Colors")]
+        private Color[] leatherPrimary = new Color[0];
+        private Color[] leatherSecondary = new Color[0];
 
-        [Header("Skin Colors")]
-        public Color[] whiteSkin = { new Color(1f, 0.8000001f, 0.682353f) };
-        public Color[] brownSkin = { new Color(0.8196079f, 0.6352941f, 0.4588236f) };
-        public Color[] blackSkin = { new Color(0.5647059f, 0.4078432f, 0.3137255f) };
-        public Color[] elfSkin = { new Color(0.9607844f, 0.7843138f, 0.7294118f) };
+        //[Header("Skin Colors")]
+        private Color[] whiteSkin = { new Color(1f, 0.8000001f, 0.682353f) };
+        private Color[] brownSkin = { new Color(0.8196079f, 0.6352941f, 0.4588236f) };
+        private Color[] blackSkin = { new Color(0.5647059f, 0.4078432f, 0.3137255f) };
+        private Color[] elfSkin = { new Color(0.9607844f, 0.7843138f, 0.7294118f) };
 
-        [Header("Hair Colors")]
-        public Color[] whiteHair = { new Color(0.3098039f, 0.254902f, 0.1764706f), new Color(0.2196079f, 0.2196079f, 0.2196079f), new Color(0.8313726f, 0.6235294f, 0.3607843f), new Color(0.8901961f, 0.7803922f, 0.5490196f), new Color(0.8000001f, 0.8196079f, 0.8078432f), new Color(0.6862745f, 0.4f, 0.2352941f), new Color(0.5450981f, 0.427451f, 0.2156863f), new Color(0.8470589f, 0.4666667f, 0.2470588f) };
-        public Color whiteStubble = new Color(0.8039216f, 0.7019608f, 0.6313726f);
-        public Color[] brownHair = { new Color(0.3098039f, 0.254902f, 0.1764706f), new Color(0.1764706f, 0.1686275f, 0.1686275f), new Color(0.3843138f, 0.2352941f, 0.0509804f), new Color(0.6196079f, 0.6196079f, 0.6196079f), new Color(0.6196079f, 0.6196079f, 0.6196079f) };
-        public Color brownStubble = new Color(0.6588235f, 0.572549f, 0.4627451f);
-        public Color[] blackHair = { new Color(0.2431373f, 0.2039216f, 0.145098f), new Color(0.1764706f, 0.1686275f, 0.1686275f), new Color(0.1764706f, 0.1686275f, 0.1686275f) };
-        public Color blackStubble = new Color(0.3882353f, 0.2901961f, 0.2470588f);
-        public Color[] elfHair = { new Color(0.9764706f, 0.9686275f, 0.9568628f), new Color(0.1764706f, 0.1686275f, 0.1686275f), new Color(0.8980393f, 0.7764707f, 0.6196079f) };
-        public Color elfStubble = new Color(0.8627452f, 0.7294118f, 0.6862745f);
+        //[Header("Hair Colors")]
+        private Color[] whiteHair = { new Color(0.3098039f, 0.254902f, 0.1764706f), new Color(0.2196079f, 0.2196079f, 0.2196079f), new Color(0.8313726f, 0.6235294f, 0.3607843f), new Color(0.8901961f, 0.7803922f, 0.5490196f), new Color(0.8000001f, 0.8196079f, 0.8078432f), new Color(0.6862745f, 0.4f, 0.2352941f), new Color(0.5450981f, 0.427451f, 0.2156863f), new Color(0.8470589f, 0.4666667f, 0.2470588f) };
+        private Color whiteStubble = new Color(0.8039216f, 0.7019608f, 0.6313726f);
+        private Color[] brownHair = { new Color(0.3098039f, 0.254902f, 0.1764706f), new Color(0.1764706f, 0.1686275f, 0.1686275f), new Color(0.3843138f, 0.2352941f, 0.0509804f), new Color(0.6196079f, 0.6196079f, 0.6196079f), new Color(0.6196079f, 0.6196079f, 0.6196079f) };
+        private Color brownStubble = new Color(0.6588235f, 0.572549f, 0.4627451f);
+        private Color[] blackHair = { new Color(0.2431373f, 0.2039216f, 0.145098f), new Color(0.1764706f, 0.1686275f, 0.1686275f), new Color(0.1764706f, 0.1686275f, 0.1686275f) };
+        private Color blackStubble = new Color(0.3882353f, 0.2901961f, 0.2470588f);
+        private Color[] elfHair = { new Color(0.9764706f, 0.9686275f, 0.9568628f), new Color(0.1764706f, 0.1686275f, 0.1686275f), new Color(0.8980393f, 0.7764707f, 0.6196079f) };
+        private Color elfStubble = new Color(0.8627452f, 0.7294118f, 0.6862745f);
 
-        [Header("Scar Colors")]
-        public Color whiteScar = new Color(0.9294118f, 0.6862745f, 0.5921569f);
-        public Color brownScar = new Color(0.6980392f, 0.5450981f, 0.4f);
-        public Color blackScar = new Color(0.4235294f, 0.3176471f, 0.282353f);
-        public Color elfScar = new Color(0.8745099f, 0.6588235f, 0.6313726f);
+        //[Header("Scar Colors")]
+        private Color whiteScar = new Color(0.9294118f, 0.6862745f, 0.5921569f);
+        private Color brownScar = new Color(0.6980392f, 0.5450981f, 0.4f);
+        private Color blackScar = new Color(0.4235294f, 0.3176471f, 0.282353f);
+        private Color elfScar = new Color(0.8745099f, 0.6588235f, 0.6313726f);
 
         [Header("Body Art Colors")]
         public Color[] bodyArt = { new Color(0.0509804f, 0.6745098f, 0.9843138f), new Color(0.7215686f, 0.2666667f, 0.2666667f), new Color(0.3058824f, 0.7215686f, 0.6862745f), new Color(0.9254903f, 0.882353f, 0.8509805f), new Color(0.3098039f, 0.7058824f, 0.3137255f), new Color(0.5294118f, 0.3098039f, 0.6470588f), new Color(0.8666667f, 0.7764707f, 0.254902f), new Color(0.2392157f, 0.4588236f, 0.8156863f) };
@@ -92,7 +100,6 @@ namespace Procedural03
 
         // cam rotation x
         float x = 16;
-
         // cam rotation y
         float y = -30;
 
@@ -188,234 +195,8 @@ namespace Procedural03
 
         }
 
-        private void ModificateTheLists(CharacterObjectGroups maleModif, CharacterObjectGroups femaleModif, CharacterObjectListsAllGender allGenderModif, ClassChoose classOfPlayer)
-        {
-            ChangeSpecificList(maleModif.headAllElements, classOfPlayer);
-            ChangeSpecificList(maleModif.headNoElements, classOfPlayer);
-            ChangeSpecificList(maleModif.eyebrow, classOfPlayer);
-            ChangeSpecificList(maleModif.facialHair, classOfPlayer);
-            ChangeSpecificList(maleModif.torso, classOfPlayer);
-            ChangeSpecificList(maleModif.arm_Upper_Right, classOfPlayer);
-            ChangeSpecificList(maleModif.arm_Upper_Left, classOfPlayer);
-            ChangeSpecificList(maleModif.arm_Lower_Right, classOfPlayer);
-            ChangeSpecificList(maleModif.arm_Lower_Left, classOfPlayer);
-            ChangeSpecificList(maleModif.hand_Right, classOfPlayer);
-            ChangeSpecificList(maleModif.hand_Left, classOfPlayer);
-            ChangeSpecificList(maleModif.hips, classOfPlayer);
-            ChangeSpecificList(maleModif.leg_Right, classOfPlayer);
-            ChangeSpecificList(maleModif.leg_Left, classOfPlayer);
-
-            //build out femaleModif lists
-            ChangeSpecificList(femaleModif.headAllElements, classOfPlayer);
-            ChangeSpecificList(femaleModif.headNoElements, classOfPlayer);
-            ChangeSpecificList(femaleModif.eyebrow, classOfPlayer);
-            ChangeSpecificList(femaleModif.facialHair, classOfPlayer);
-            ChangeSpecificList(femaleModif.torso, classOfPlayer);
-            ChangeSpecificList(femaleModif.arm_Upper_Right, classOfPlayer);
-            ChangeSpecificList(femaleModif.arm_Upper_Left, classOfPlayer);
-            ChangeSpecificList(femaleModif.arm_Lower_Right, classOfPlayer);
-            ChangeSpecificList(femaleModif.arm_Lower_Left, classOfPlayer);
-            ChangeSpecificList(femaleModif.hand_Right, classOfPlayer);
-            ChangeSpecificList(femaleModif.hand_Left, classOfPlayer);
-            ChangeSpecificList(femaleModif.hips, classOfPlayer);
-            ChangeSpecificList(femaleModif.leg_Right, classOfPlayer);
-            ChangeSpecificList(femaleModif.leg_Left, classOfPlayer);
-
-            // build out all gender lists
-            ChangeSpecificList(allGenderModif.all_Hair, classOfPlayer);
-            ChangeSpecificList(allGenderModif.all_Head_Attachment, classOfPlayer);
-            ChangeSpecificList(allGenderModif.headCoverings_Base_Hair, classOfPlayer);
-            ChangeSpecificList(allGenderModif.headCoverings_No_FacialHair, classOfPlayer);
-            ChangeSpecificList(allGenderModif.headCoverings_No_Hair, classOfPlayer);
-            ChangeSpecificList(allGenderModif.chest_Attachment, classOfPlayer);
-            ChangeSpecificList(allGenderModif.back_Attachment, classOfPlayer);
-            ChangeSpecificList(allGenderModif.shoulder_Attachment_Right, classOfPlayer);
-            ChangeSpecificList(allGenderModif.shoulder_Attachment_Left, classOfPlayer);
-            ChangeSpecificList(allGenderModif.elbow_Attachment_Right, classOfPlayer);
-            ChangeSpecificList(allGenderModif.elbow_Attachment_Left, classOfPlayer);
-            ChangeSpecificList(allGenderModif.hips_Attachment, classOfPlayer);
-            ChangeSpecificList(allGenderModif.knee_Attachement_Right, classOfPlayer);
-            ChangeSpecificList(allGenderModif.knee_Attachement_Left, classOfPlayer);
-            ChangeSpecificList(allGenderModif.elf_Ear, classOfPlayer);
-            ChangeSpecificList(allGenderModif.All_13_Hand_Attachement_Left, classOfPlayer);
-            ChangeSpecificList(allGenderModif.All_13_Hand_Attachement_Right, classOfPlayer);
-        }
-
-        private void ShowLists(CharacterObjectGroups maleModif, CharacterObjectGroups femaleModif, CharacterObjectListsAllGender allGenderModif)
-        {
-            ShowList(maleModif.headAllElements);
-            ShowList(maleModif.headNoElements);
-            ShowList(maleModif.eyebrow);
-            ShowList(maleModif.facialHair);
-            ShowList(maleModif.torso);
-            ShowList(maleModif.arm_Upper_Right);
-            ShowList(maleModif.arm_Upper_Left);
-            ShowList(maleModif.arm_Lower_Right);
-            ShowList(maleModif.arm_Lower_Left);
-            ShowList(maleModif.hand_Right);
-            ShowList(maleModif.hand_Left);
-            ShowList(maleModif.hips);
-            ShowList(maleModif.leg_Right);
-            ShowList(maleModif.leg_Left);
-
-            //build out femaleModif lists
-            ShowList(femaleModif.headAllElements);
-            ShowList(femaleModif.headNoElements);
-            ShowList(femaleModif.eyebrow);
-            ShowList(femaleModif.facialHair);
-            ShowList(femaleModif.torso);
-            ShowList(femaleModif.arm_Upper_Right);
-            ShowList(femaleModif.arm_Upper_Left);
-            ShowList(femaleModif.arm_Lower_Right);
-            ShowList(femaleModif.arm_Lower_Left);
-            ShowList(femaleModif.hand_Right);
-            ShowList(femaleModif.hand_Left);
-            ShowList(femaleModif.hips);
-            ShowList(femaleModif.leg_Right);
-            ShowList(femaleModif.leg_Left);
-
-            // build out all gender lists
-            ShowList(allGenderModif.all_Hair);
-            ShowList(allGenderModif.all_Head_Attachment);
-            ShowList(allGenderModif.headCoverings_Base_Hair);
-            ShowList(allGenderModif.headCoverings_No_FacialHair);
-            ShowList(allGenderModif.headCoverings_No_Hair);
-            ShowList(allGenderModif.chest_Attachment);
-            ShowList(allGenderModif.back_Attachment);
-            ShowList(allGenderModif.shoulder_Attachment_Right);
-            ShowList(allGenderModif.shoulder_Attachment_Left);
-            ShowList(allGenderModif.elbow_Attachment_Right);
-            ShowList(allGenderModif.elbow_Attachment_Left);
-            ShowList(allGenderModif.hips_Attachment);
-            ShowList(allGenderModif.knee_Attachement_Right);
-            ShowList(allGenderModif.knee_Attachement_Left);
-            ShowList(allGenderModif.elf_Ear);
-            ShowList(allGenderModif.All_13_Hand_Attachement_Left);
-            ShowList(allGenderModif.All_13_Hand_Attachement_Right);
-        }
-
-        private void ShowList(List<GameObject> gameObjects)
-        {
-            Debug.LogWarning(gameObjects.Count + " objects.");
-        }
-        //All the function and methods needed to randomize the 
-
-        private void BuildLists(ClassChoose classChoose)
-        {
-            //build out male lists
-            BuildList(male.headAllElements, "Male_Head_All_Elements", classChoose);
-            BuildList(male.headNoElements, "Male_Head_No_Elements", classChoose);
-            BuildList(male.eyebrow, "Male_01_Eyebrows", classChoose);
-            BuildList(male.facialHair, "Male_02_FacialHair", classChoose);
-            BuildList(male.torso, "Male_03_Torso", classChoose);
-            BuildList(male.arm_Upper_Right, "Male_04_Arm_Upper_Right", classChoose);
-            BuildList(male.arm_Upper_Left, "Male_05_Arm_Upper_Left", classChoose);
-            BuildList(male.arm_Lower_Right, "Male_06_Arm_Lower_Right", classChoose);
-            BuildList(male.arm_Lower_Left, "Male_07_Arm_Lower_Left", classChoose);
-            BuildList(male.hand_Right, "Male_08_Hand_Right", classChoose);
-            BuildList(male.hand_Left, "Male_09_Hand_Left", classChoose);
-            BuildList(male.hips, "Male_10_Hips", classChoose);
-            BuildList(male.leg_Right, "Male_11_Leg_Right", classChoose);
-            BuildList(male.leg_Left, "Male_12_Leg_Left", classChoose);
-
-            //build out female lists
-            BuildList(female.headAllElements, "Female_Head_All_Elements", classChoose);
-            BuildList(female.headNoElements, "Female_Head_No_Elements", classChoose);
-            BuildList(female.eyebrow, "Female_01_Eyebrows", classChoose);
-            BuildList(female.facialHair, "Female_02_FacialHair", classChoose);
-            BuildList(female.torso, "Female_03_Torso", classChoose);
-            BuildList(female.arm_Upper_Right, "Female_04_Arm_Upper_Right", classChoose);
-            BuildList(female.arm_Upper_Left, "Female_05_Arm_Upper_Left", classChoose);
-            BuildList(female.arm_Lower_Right, "Female_06_Arm_Lower_Right", classChoose);
-            BuildList(female.arm_Lower_Left, "Female_07_Arm_Lower_Left", classChoose);
-            BuildList(female.hand_Right, "Female_08_Hand_Right", classChoose);
-            BuildList(female.hand_Left, "Female_09_Hand_Left", classChoose);
-            BuildList(female.hips, "Female_10_Hips", classChoose);
-            BuildList(female.leg_Right, "Female_11_Leg_Right", classChoose);
-            BuildList(female.leg_Left, "Female_12_Leg_Left", classChoose);
-
-            // build out all gender lists
-            BuildList(allGender.all_Hair, "All_01_Hair", classChoose);
-            BuildList(allGender.all_Head_Attachment, "All_02_Head_Attachment", classChoose);
-            BuildList(allGender.headCoverings_Base_Hair, "HeadCoverings_Base_Hair", classChoose);
-            BuildList(allGender.headCoverings_No_FacialHair, "HeadCoverings_No_FacialHair", classChoose);
-            BuildList(allGender.headCoverings_No_Hair, "HeadCoverings_No_Hair", classChoose);
-            BuildList(allGender.chest_Attachment, "All_03_Chest_Attachment", classChoose);
-            BuildList(allGender.back_Attachment, "All_04_Back_Attachment", classChoose);
-            BuildList(allGender.shoulder_Attachment_Right, "All_05_Shoulder_Attachment_Right", classChoose);
-            BuildList(allGender.shoulder_Attachment_Left, "All_06_Shoulder_Attachment_Left", classChoose);
-            BuildList(allGender.elbow_Attachment_Right, "All_07_Elbow_Attachment_Right", classChoose);
-            BuildList(allGender.elbow_Attachment_Left, "All_08_Elbow_Attachment_Left", classChoose);
-            BuildList(allGender.hips_Attachment, "All_09_Hips_Attachment", classChoose);
-            BuildList(allGender.knee_Attachement_Right, "All_10_Knee_Attachement_Right", classChoose);
-            BuildList(allGender.knee_Attachement_Left, "All_11_Knee_Attachement_Left", classChoose);
-            BuildList(allGender.elf_Ear, "Elf_Ear", classChoose);
-            BuildList(allGender.All_13_Hand_Attachement_Left, "All_13_Hand_Attachement_Right", classChoose);
-            BuildList(allGender.All_13_Hand_Attachement_Right, "All_13_Hand_Attachement_Left", classChoose);
-
-        }
-
-        void BuildList(List<GameObject> targetList, string characterPart, ClassChoose classChoose)
-        {
-            Transform[] rootTransform = gameObject.GetComponentsInChildren<Transform>(true);
-
-            // declare target root transform
-            Transform targetRoot = null;
-
-            // find character parts parent object in the scene
-            foreach (Transform t in rootTransform)
-            {
-                if (t.gameObject.name == characterPart)
-                {
-                    targetRoot = t;
-                    break;
-                }
-            }
-
-            // clears targeted list of all objects
-            targetList.Clear();
-
-            // cycle through all child objects of the parent object
-            for (int i = 0; i < targetRoot.childCount; i++)
-            {
-                // get child gameobject index i
-                GameObject go = targetRoot.GetChild(i).gameObject;
-
-
-                bool isCompatible = false;
-                ClassHolder classHolder = go.GetComponent<ClassHolder>();
-                if (classHolder == null)
-                {
-                    Debug.LogError(go.name + " do not have ClassHolderScript");
-
-                }
-                else
-                {
-                    isCompatible = classHolder.CheckClass(classChoose);
-                }
-                //add object to the targeted object list if it is compatible
-                if (isCompatible)
-                {
-                    targetList.Add(go);
-                }
-
-                if (!mat)
-                {
-                    // collect the material for the random character, only if null in the inspector;
-                    if (go.GetComponent<SkinnedMeshRenderer>())
-                        mat = go.GetComponent<SkinnedMeshRenderer>().material;
-                }
-                
-                // disable child object
-                go.SetActive(false);
-
-
-
-            }
-        }
-
         // randomization method based on previously selected variables
-        void RandomizeByVariable(CharacterObjectGroups cog, CharacterObjectListsAllGender allGenderModif, Gender gender, Elements elements, Race race, FacialHair facialHair, SkinColor skinColor, TypeHeadCovering headCovering, ClassChoose classChoose)
+        void RandomizeByVariable(CharacterObjectGroups cog, CharacterObjectListsAllGender allGenderModif, Gender gender, Elements elements, Race race, FacialHair facialHair, SkinColor skinColor, TypeHeadCovering headCovering, ClassChoose classOfPlayer)
         {
             int index = 0;
             // if facial elements are enabled
@@ -573,11 +354,203 @@ namespace Procedural03
             if (allGenderModif.knee_Attachement_Right.Count != 0)
                 RandomizeLeftRight(allGenderModif.knee_Attachement_Right, allGenderModif.knee_Attachement_Left, 10);
 
+            //Determine wich weapons to take
+            List<GameObject> weaponLeftHand = BuiltWeaponsList(classOfPlayer, rootWeaponsLeftHand);
+            List<GameObject> weaponRightHand = BuiltWeaponsList(classOfPlayer, rootWeaponsRightHand);
+            List<GameObject> shields = BuiltWeaponsList(classOfPlayer, rootShields);
 
+            if (classOfPlayer == ClassChoose.Berserk || classOfPlayer == ClassChoose.Rogue)
+            {
+                if (weaponLeftHand.Count > 0)
+                {
+                    index = IndexRandomizer(weaponLeftHand.Count);
+                    ActivateItem(weaponLeftHand[index]);
+                }
+                else
+                {
+                    Debug.LogError("La liste d'arme de la main gauche est vide : " + weaponLeftHand.Count);
+                }
+
+                if (classOfPlayer == ClassChoose.Rogue )
+                {
+                    if (shields.Count > 0)
+                    {
+                        index = IndexRandomizer(shields.Count);
+                        ActivateItem(shields[index]);
+                    }
+                    else
+                    {
+                        Debug.LogError("La liste d'arme de la main gauche est vide : " + shields.Count);
+                    }
+                    
+                }
+            }
+            
+            
+            if (weaponRightHand.Count > 0)
+            {
+                index = IndexRandomizer(weaponRightHand.Count);
+                ActivateItem(weaponRightHand[index]);
+            }
+            else
+            {
+                Debug.LogError("La liste d'arme de la main droite est vide : " + weaponRightHand.Count);
+
+            }
             // start randomization of the random characters colors
             RandomizeColors(skinColor);
         }
 
+
+        private void BuildLists(ClassChoose classChoose)
+        {
+            //build out male lists
+            BuildList(male.headAllElements, "Male_Head_All_Elements", classChoose);
+            BuildList(male.headNoElements, "Male_Head_No_Elements", classChoose);
+            BuildList(male.eyebrow, "Male_01_Eyebrows", classChoose);
+            BuildList(male.facialHair, "Male_02_FacialHair", classChoose);
+            BuildList(male.torso, "Male_03_Torso", classChoose);
+            BuildList(male.arm_Upper_Right, "Male_04_Arm_Upper_Right", classChoose);
+            BuildList(male.arm_Upper_Left, "Male_05_Arm_Upper_Left", classChoose);
+            BuildList(male.arm_Lower_Right, "Male_06_Arm_Lower_Right", classChoose);
+            BuildList(male.arm_Lower_Left, "Male_07_Arm_Lower_Left", classChoose);
+            BuildList(male.hand_Right, "Male_08_Hand_Right", classChoose);
+            BuildList(male.hand_Left, "Male_09_Hand_Left", classChoose);
+            BuildList(male.hips, "Male_10_Hips", classChoose);
+            BuildList(male.leg_Right, "Male_11_Leg_Right", classChoose);
+            BuildList(male.leg_Left, "Male_12_Leg_Left", classChoose);
+
+            //build out female lists
+            BuildList(female.headAllElements, "Female_Head_All_Elements", classChoose);
+            BuildList(female.headNoElements, "Female_Head_No_Elements", classChoose);
+            BuildList(female.eyebrow, "Female_01_Eyebrows", classChoose);
+            BuildList(female.facialHair, "Female_02_FacialHair", classChoose);
+            BuildList(female.torso, "Female_03_Torso", classChoose);
+            BuildList(female.arm_Upper_Right, "Female_04_Arm_Upper_Right", classChoose);
+            BuildList(female.arm_Upper_Left, "Female_05_Arm_Upper_Left", classChoose);
+            BuildList(female.arm_Lower_Right, "Female_06_Arm_Lower_Right", classChoose);
+            BuildList(female.arm_Lower_Left, "Female_07_Arm_Lower_Left", classChoose);
+            BuildList(female.hand_Right, "Female_08_Hand_Right", classChoose);
+            BuildList(female.hand_Left, "Female_09_Hand_Left", classChoose);
+            BuildList(female.hips, "Female_10_Hips", classChoose);
+            BuildList(female.leg_Right, "Female_11_Leg_Right", classChoose);
+            BuildList(female.leg_Left, "Female_12_Leg_Left", classChoose);
+
+            // build out all gender lists
+            BuildList(allGender.all_Hair, "All_01_Hair", classChoose);
+            BuildList(allGender.all_Head_Attachment, "All_02_Head_Attachment", classChoose);
+            BuildList(allGender.headCoverings_Base_Hair, "HeadCoverings_Base_Hair", classChoose);
+            BuildList(allGender.headCoverings_No_FacialHair, "HeadCoverings_No_FacialHair", classChoose);
+            BuildList(allGender.headCoverings_No_Hair, "HeadCoverings_No_Hair", classChoose);
+            BuildList(allGender.chest_Attachment, "All_03_Chest_Attachment", classChoose);
+            BuildList(allGender.back_Attachment, "All_04_Back_Attachment", classChoose);
+            BuildList(allGender.shoulder_Attachment_Right, "All_05_Shoulder_Attachment_Right", classChoose);
+            BuildList(allGender.shoulder_Attachment_Left, "All_06_Shoulder_Attachment_Left", classChoose);
+            BuildList(allGender.elbow_Attachment_Right, "All_07_Elbow_Attachment_Right", classChoose);
+            BuildList(allGender.elbow_Attachment_Left, "All_08_Elbow_Attachment_Left", classChoose);
+            BuildList(allGender.hips_Attachment, "All_09_Hips_Attachment", classChoose);
+            BuildList(allGender.knee_Attachement_Right, "All_10_Knee_Attachement_Right", classChoose);
+            BuildList(allGender.knee_Attachement_Left, "All_11_Knee_Attachement_Left", classChoose);
+            BuildList(allGender.elf_Ear, "Elf_Ear", classChoose);
+
+        }
+        void BuildList(List<GameObject> targetList, string characterPart, ClassChoose classChoose)
+        {
+            Transform[] rootTransform = gameObject.GetComponentsInChildren<Transform>(true);
+
+            // declare target root transform
+            Transform targetRoot = null;
+
+            // find character parts parent object in the scene
+            foreach (Transform t in rootTransform)
+            {
+                if (t.gameObject.name == characterPart)
+                {
+                    targetRoot = t;
+                    break;
+                }
+            }
+
+            // clears targeted list of all objects
+            targetList.Clear();
+
+            // cycle through all child objects of the parent object
+            for (int i = 0; i < targetRoot.childCount; i++)
+            {
+                // get child gameobject index i
+                GameObject go = targetRoot.GetChild(i).gameObject;
+
+
+                bool isCompatible = false;
+                ClassHolder classHolder = go.GetComponent<ClassHolder>();
+                if (classHolder == null)
+                {
+                    Debug.LogError(go.name + " do not have ClassHolderScript");
+
+                }
+                else
+                {
+                    isCompatible = classHolder.CheckClass(classChoose);
+                }
+                //add object to the targeted object list if it is compatible
+                if (isCompatible)
+                {
+                    targetList.Add(go);
+                }
+
+                if (!mat)
+                {
+                    // collect the material for the random character, only if null in the inspector;
+                    if (go.GetComponent<SkinnedMeshRenderer>())
+                        mat = go.GetComponent<SkinnedMeshRenderer>().material;
+                }
+                
+                // disable child object
+                go.SetActive(false);
+
+            }
+        }
+
+        List<GameObject> BuiltWeaponsList( ClassChoose classChoose, Transform targetRoot)
+        {
+            List<GameObject> targetList = new List<GameObject>();
+            // cycle through all child objects of the parent object
+            for (int i = 0; i < targetRoot.childCount; i++)
+            {
+                // get child gameobject index i
+                GameObject go = targetRoot.GetChild(i).gameObject;
+
+
+                bool isCompatible = false;
+                ClassHolder classHolder = go.GetComponent<ClassHolder>();
+                if (classHolder == null)
+                {
+                    Debug.LogError(go.name + " do not have ClassHolderScript");
+
+                }
+                else
+                {
+                    isCompatible = classHolder.CheckClass(classChoose);
+                }
+                //add object to the targeted object list if it is compatible
+                if (isCompatible)
+                {
+                    targetList.Add(go);
+                }
+
+                if (!mat)
+                {
+                    // collect the material for the random character, only if null in the inspector;
+                    if (go.GetComponent<SkinnedMeshRenderer>())
+                        mat = go.GetComponent<SkinnedMeshRenderer>().material;
+                }
+
+                // disable child object
+                go.SetActive(false);
+
+            }
+            return targetList;
+        }
         private void UpgraderOfSeedEnhancer(int upgrader)
         {
             seedEnhancer += (upgrader + 1) * (seedEnhancer % 3);
@@ -877,8 +850,6 @@ namespace Procedural03
         public List<GameObject> knee_Attachement_Left;
         //public List<GameObject> all_12_Extra;
         public List<GameObject> elf_Ear;
-        public List<GameObject> All_13_Hand_Attachement_Right;
-        public List<GameObject> All_13_Hand_Attachement_Left;
 
         public void Initialize()
         {
@@ -898,8 +869,6 @@ namespace Procedural03
             knee_Attachement_Left = new List<GameObject>();
             //all_12_Extra = new List<GameObject>();
             elf_Ear = new List<GameObject>();
-            All_13_Hand_Attachement_Right = new List<GameObject>();
-            All_13_Hand_Attachement_Left = new List<GameObject>();
 
         }
         
