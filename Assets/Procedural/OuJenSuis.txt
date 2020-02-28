@@ -1,1 +1,54 @@
-Female Part
+private void BuildLists(ClassChoose classChoose)
+        {
+            //build out male lists
+            BuildList(male.headAllElements, "Male_Head_All_Elements",classChoose);
+            BuildList(male.headNoElements, "Male_Head_No_Elements",classChoose);
+            BuildList(male.eyebrow, "Male_01_Eyebrows",classChoose);
+            BuildList(male.facialHair, "Male_02_FacialHair",classChoose);
+            BuildList(male.torso, "Male_03_Torso",classChoose);
+            BuildList(male.arm_Upper_Right, "Male_04_Arm_Upper_Right",classChoose);
+            BuildList(male.arm_Upper_Left, "Male_05_Arm_Upper_Left",classChoose);
+            BuildList(male.arm_Lower_Right, "Male_06_Arm_Lower_Right",classChoose);
+            BuildList(male.arm_Lower_Left, "Male_07_Arm_Lower_Left",classChoose);
+            BuildList(male.hand_Right, "Male_08_Hand_Right",classChoose);
+            BuildList(male.hand_Left, "Male_09_Hand_Left",classChoose);
+            BuildList(male.hips, "Male_10_Hips",classChoose);
+            BuildList(male.leg_Right, "Male_11_Leg_Right",classChoose);
+            BuildList(male.leg_Left, "Male_12_Leg_Left",classChoose);
+
+            //build out female lists
+            BuildList(female.headAllElements, "Female_Head_All_Elements",classChoose);
+            BuildList(female.headNoElements, "Female_Head_No_Elements",classChoose);
+            BuildList(female.eyebrow, "Female_01_Eyebrows",classChoose);
+            BuildList(female.facialHair, "Female_02_FacialHair",classChoose);
+            BuildList(female.torso, "Female_03_Torso",classChoose);
+            BuildList(female.arm_Upper_Right, "Female_04_Arm_Upper_Right",classChoose);
+            BuildList(female.arm_Upper_Left, "Female_05_Arm_Upper_Left",classChoose);
+            BuildList(female.arm_Lower_Right, "Female_06_Arm_Lower_Right",classChoose);
+            BuildList(female.arm_Lower_Left, "Female_07_Arm_Lower_Left",classChoose);
+            BuildList(female.hand_Right, "Female_08_Hand_Right",classChoose);
+            BuildList(female.hand_Left, "Female_09_Hand_Left",classChoose);
+            BuildList(female.hips, "Female_10_Hips",classChoose);
+            BuildList(female.leg_Right, "Female_11_Leg_Right",classChoose);
+            BuildList(female.leg_Left, "Female_12_Leg_Left",classChoose);
+
+            // build out all gender lists
+            BuildList(allGender.all_Hair, "All_01_Hair",classChoose);
+            BuildList(allGender.all_Head_Attachment, "All_02_Head_Attachment",classChoose);
+            BuildList(allGender.headCoverings_Base_Hair, "HeadCoverings_Base_Hair",classChoose);
+            BuildList(allGender.headCoverings_No_FacialHair, "HeadCoverings_No_FacialHair",classChoose);
+            BuildList(allGender.headCoverings_No_Hair, "HeadCoverings_No_Hair",classChoose);
+            BuildList(allGender.chest_Attachment, "All_03_Chest_Attachment",classChoose);
+            BuildList(allGender.back_Attachment, "All_04_Back_Attachment",classChoose);
+            BuildList(allGender.shoulder_Attachment_Right, "All_05_Shoulder_Attachment_Right",classChoose);
+            BuildList(allGender.shoulder_Attachment_Left, "All_06_Shoulder_Attachment_Left",classChoose);
+            BuildList(allGender.elbow_Attachment_Right, "All_07_Elbow_Attachment_Right",classChoose);
+            BuildList(allGender.elbow_Attachment_Left, "All_08_Elbow_Attachment_Left",classChoose);
+            BuildList(allGender.hips_Attachment, "All_09_Hips_Attachment",classChoose);
+            BuildList(allGender.knee_Attachement_Right, "All_10_Knee_Attachement_Right",classChoose);
+            BuildList(allGender.knee_Attachement_Left, "All_11_Knee_Attachement_Left",classChoose);
+            BuildList(allGender.elf_Ear, "Elf_Ear",classChoose);
+            BuildList(allGender.All_13_Hand_Attachement_Left, "All_13_Hand_Attachement_Right",classChoose);
+            BuildList(allGender.All_13_Hand_Attachement_Right, "All_13_Hand_Attachement_Left",classChoose);
+
+        }

@@ -8,7 +8,7 @@ namespace PsychoticLab
     public enum Race { Human, Elf }
     public enum SkinColor { White, Brown, Black, Elf }
     public enum Elements {  Yes, No }
-    public enum HeadCovering { HeadCoverings_Base_Hair, HeadCoverings_No_FacialHair, HeadCoverings_No_Hair }
+    public enum TypeHeadCovering { HeadCoverings_Base_Hair, HeadCoverings_No_FacialHair, HeadCoverings_No_Hair }
     public enum FacialHair { Yes, No }
 
     public class CharacterRandomizer : MonoBehaviour
@@ -118,20 +118,20 @@ namespace PsychoticLab
             // clear enabled objects list
             enabledObjects.Clear();
 
-            // set default male character
-            ActivateItem(male.headAllElements[0]);
-            ActivateItem(male.eyebrow[0]);
-            ActivateItem(male.facialHair[0]);
-            ActivateItem(male.torso[0]);
-            ActivateItem(male.arm_Upper_Right[0]);
-            ActivateItem(male.arm_Upper_Left[0]);
-            ActivateItem(male.arm_Lower_Right[0]);
-            ActivateItem(male.arm_Lower_Left[0]);
-            ActivateItem(male.hand_Right[0]);
-            ActivateItem(male.hand_Left[0]);
-            ActivateItem(male.hips[0]);
-            ActivateItem(male.leg_Right[0]);
-            ActivateItem(male.leg_Left[0]);
+            //// set default male character
+            //ActivateItem(male.headAllElements[0]);
+            //ActivateItem(male.eyebrow[0]);
+            //ActivateItem(male.facialHair[0]);
+            //ActivateItem(male.torso[0]);
+            //ActivateItem(male.arm_Upper_Right[0]);
+            //ActivateItem(male.arm_Upper_Left[0]);
+            //ActivateItem(male.arm_Lower_Right[0]);
+            //ActivateItem(male.arm_Lower_Left[0]);
+            //ActivateItem(male.hand_Right[0]);
+            //ActivateItem(male.hand_Left[0]);
+            //ActivateItem(male.hips[0]);
+            //ActivateItem(male.leg_Right[0]);
+            //ActivateItem(male.leg_Left[0]);
 
             // setting up the camera position, rotation, and reference for use
             Transform cam = Camera.main.transform;
@@ -145,13 +145,15 @@ namespace PsychoticLab
                 cam.SetParent(camHolder);
             }
 
-            // if repeat on play is checked in the inspector, repeat the randomize method based on the shuffle speed, also defined in the inspector
-            if (repeatOnPlay)
-                InvokeRepeating("Randomize", shuffleSpeed, shuffleSpeed);
+            //// if repeat on play is checked in the inspector, repeat the randomize method based on the shuffle speed, also defined in the inspector
+            //if (repeatOnPlay)
+            //    InvokeRepeating("Randomize", shuffleSpeed, shuffleSpeed);
         }
 
         private void Update()
         {
+            RandomUpdate();
+
             if (camHolder)
             {
                 if (Input.GetKey(KeyCode.Mouse1))
@@ -181,6 +183,14 @@ namespace PsychoticLab
             }
         }
 
+        void RandomUpdate()
+        {
+
+        }
+
+        
+
+
         // character randomization method
         void Randomize()
         {
@@ -189,7 +199,7 @@ namespace PsychoticLab
             Race race = Race.Human;
             SkinColor skinColor = SkinColor.White;
             Elements elements = Elements.Yes;
-            HeadCovering headCovering = HeadCovering.HeadCoverings_Base_Hair;
+            TypeHeadCovering headCovering = TypeHeadCovering.HeadCoverings_Base_Hair;
             FacialHair facialHair = FacialHair.Yes;
 
             // disable any enabled objects before clear
@@ -220,13 +230,13 @@ namespace PsychoticLab
             int headCoveringRoll = Random.Range(0, 100);
             // HeadCoverings_Base_Hair
             if (headCoveringRoll <= 33)
-                headCovering = HeadCovering.HeadCoverings_Base_Hair;
+                headCovering = TypeHeadCovering.HeadCoverings_Base_Hair;
             // HeadCoverings_No_FacialHair
             if (headCoveringRoll > 33 && headCoveringRoll < 66)
-                headCovering = HeadCovering.HeadCoverings_No_FacialHair;
+                headCovering = TypeHeadCovering.HeadCoverings_No_FacialHair;
             // HeadCoverings_No_Hair
             if (headCoveringRoll >= 66)
-                headCovering = HeadCovering.HeadCoverings_No_Hair;
+                headCovering = TypeHeadCovering.HeadCoverings_No_Hair;
 
             // select skin color if human, otherwise set skin color to elf
             switch (race)
@@ -274,7 +284,7 @@ namespace PsychoticLab
         }
 
         // randomization method based on previously selected variables
-        void RandomizeByVariable(CharacterObjectGroups cog, Gender gender, Elements elements, Race race, FacialHair facialHair, SkinColor skinColor, HeadCovering headCovering)
+        void RandomizeByVariable(CharacterObjectGroups cog, Gender gender, Elements elements, Race race, FacialHair facialHair, SkinColor skinColor, TypeHeadCovering headCovering)
         {
             // if facial elements are enabled
             switch (elements)
@@ -289,27 +299,27 @@ namespace PsychoticLab
                         ActivateItem(cog.eyebrow[Random.Range(0, cog.eyebrow.Count)]);
 
                     //select facial hair (conditional)
-                    if (cog.facialHair.Count != 0 && facialHair == FacialHair.Yes && gender == Gender.Male && headCovering != HeadCovering.HeadCoverings_No_FacialHair)
+                    if (cog.facialHair.Count != 0 && facialHair == FacialHair.Yes && gender == Gender.Male && headCovering != TypeHeadCovering.HeadCoverings_No_FacialHair)
                         ActivateItem(cog.facialHair[Random.Range(0, cog.facialHair.Count)]);
 
                     // select hair attachment
                     switch (headCovering)
                     {
-                        case HeadCovering.HeadCoverings_Base_Hair:
+                        case TypeHeadCovering.HeadCoverings_Base_Hair:
                             // set hair attachment to index 1
                             if (allGender.all_Hair.Count != 0)
                                 ActivateItem(allGender.all_Hair[1]);
                             if (allGender.headCoverings_Base_Hair.Count != 0)
                                 ActivateItem(allGender.headCoverings_Base_Hair[Random.Range(0, allGender.headCoverings_Base_Hair.Count)]);
                             break;
-                        case HeadCovering.HeadCoverings_No_FacialHair:
+                        case TypeHeadCovering.HeadCoverings_No_FacialHair:
                             // no facial hair attachment
                             if (allGender.all_Hair.Count != 0)
                                 ActivateItem(allGender.all_Hair[Random.Range(0, allGender.all_Hair.Count)]);
                             if (allGender.headCoverings_No_FacialHair.Count != 0)
                                 ActivateItem(allGender.headCoverings_No_FacialHair[Random.Range(0, allGender.headCoverings_No_FacialHair.Count)]);
                             break;
-                        case HeadCovering.HeadCoverings_No_Hair:
+                        case TypeHeadCovering.HeadCoverings_No_Hair:
                             // select hair attachment
                             if (allGender.headCoverings_No_Hair.Count != 0)
                                 ActivateItem(allGender.all_Hair[Random.Range(0, allGender.all_Hair.Count)]);
@@ -565,7 +575,7 @@ namespace PsychoticLab
             BuildList(female.hips, "Female_10_Hips");
             BuildList(female.leg_Right, "Female_11_Leg_Right");
             BuildList(female.leg_Left, "Female_12_Leg_Left");
-
+            
             // build out all gender lists
             BuildList(allGender.all_Hair, "All_01_Hair");
             BuildList(allGender.all_Head_Attachment, "All_02_Head_Attachment");

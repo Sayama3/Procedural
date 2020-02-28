@@ -2,24 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClassHolder : MonoBehaviour
-{
-    [SerializeField] private bool warrior;
-    [SerializeField] private bool rogue;
-    [SerializeField] private bool mage;
-    [SerializeField] private bool priest;
-    [SerializeField] private bool berserk;
 
-    [HideInInspector] public bool[] classes;
-    private void Awake()
+namespace Procedural03
+{
+
+    public class ClassHolder : MonoBehaviour
     {
-        classes = new bool[]
+        [SerializeField] private bool warrior;
+        [SerializeField] private bool rogue;
+        [SerializeField] private bool mage;
+        [SerializeField] private bool priest;
+        [SerializeField] private bool berserk;
+
+        [HideInInspector] public bool[] classes;
+        private void Awake()
+        {
+            CreateTheClass();
+        }
+
+        private void CreateTheClass()
+        {
+            classes = new bool[]
+                            {
+                    warrior,
+                    rogue,
+                    mage,
+                    priest,
+                    berserk
+                            };
+        }
+
+        public bool CheckClass(ClassChoose classOfPlayer)
+        {
+            if (classes.Length == 0)
             {
-            warrior,
-            rogue,
-            mage,
-            priest,
-            berserk
-            };
+                //Debug.LogError("Youre trying to acces to " + this.name + " which not suppose to have a script ClassHolder. Anyway I will return false;");
+                CreateTheClass();
+                return classes[(int)classOfPlayer];
+            }
+            else
+            {
+                return classes[(int)classOfPlayer];
+            }
+        }
     }
 }
