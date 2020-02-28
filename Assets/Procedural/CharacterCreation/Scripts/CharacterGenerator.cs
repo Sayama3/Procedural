@@ -106,7 +106,7 @@ namespace Procedural03
             allGender.Initialize();
 
             
-            ShowLists(male, female, allGender);
+            //ShowLists(male, female, allGender);
 
             //Creation of the camera
             Transform cam = Camera.main.transform;
@@ -154,10 +154,10 @@ namespace Procedural03
             //choosing the race
             Race race = (Race)(seedEnhancer % 2);
             UpgraderOfSeedEnhancer((int)race);
-
             //Choosing if we add element on the charcter
-            Elements elements = (Elements)(seedEnhancer % 2);
+            Elements elements = (classOfPlayer == ClassChoose.Warrior) ? (Elements)(seedEnhancer % 2) : Elements.Yes;
             UpgraderOfSeedEnhancer((int)elements);
+            
 
             //Choosing the type of cover if there is
             TypeHeadCovering headCovering = (TypeHeadCovering)(seedEnhancer % 3);
@@ -296,7 +296,7 @@ namespace Procedural03
 
         private void ShowList(List<GameObject> gameObjects)
         {
-            Debug.LogWarning(gameObjects.ToString() + "has " + gameObjects.Count + " objects.");
+            Debug.LogWarning(gameObjects.Count + " objects.");
         }
         //All the function and methods needed to randomize the 
 

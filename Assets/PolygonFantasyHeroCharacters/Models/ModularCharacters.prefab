@@ -37450,10 +37450,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warrior: 0
-  rogue: 0
+  rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862063861
 GameObject:
@@ -69133,7 +69133,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862064725
 GameObject:
@@ -69237,7 +69237,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862064727
 GameObject:
@@ -69341,7 +69341,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862064729
 GameObject:
@@ -69445,7 +69445,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862064731
 GameObject:
@@ -78033,6 +78033,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   from: 10000
   to: 70000
+  LaOuLeProgrammeDoitAfficherLaSeed: {fileID: 0}
+  LaSeedQueLeProgrammeDoitRecuperer: {fileID: 0}
 --- !u!114 &-387373229684842204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78822,7 +78824,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065091
 GameObject:
@@ -78926,7 +78928,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065093
 GameObject:
@@ -79030,7 +79032,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065095
 GameObject:
@@ -79134,7 +79136,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065097
 GameObject:
@@ -79238,7 +79240,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065099
 GameObject:
@@ -79342,7 +79344,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065103
 GameObject:
@@ -79446,7 +79448,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065105
 GameObject:
@@ -79622,7 +79624,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065119
 GameObject:
@@ -79726,7 +79728,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065121
 GameObject:
@@ -79830,7 +79832,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065123
 GameObject:
@@ -79934,7 +79936,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065137
 GameObject:
@@ -80038,7 +80040,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065139
 GameObject:
@@ -80142,7 +80144,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065141
 GameObject:
@@ -80246,7 +80248,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065143
 GameObject:
@@ -80350,7 +80352,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065145
 GameObject:
@@ -80454,7 +80456,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065147
 GameObject:
@@ -80558,7 +80560,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065149
 GameObject:
@@ -80662,7 +80664,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!1 &667030907862065151
 GameObject:
@@ -80766,7 +80768,7 @@ MonoBehaviour:
   rogue: 1
   mage: 1
   priest: 1
-  berserk: 0
+  berserk: 1
   classes: 
 --- !u!114 &6997368959711370511
 MonoBehaviour:
